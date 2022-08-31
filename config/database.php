@@ -65,12 +65,12 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('postgres://cnrmzsbsgjwbtv:aeadafde31a171beee08f266408e19a18c03f8f9ff7a1136aa04692792fbe471@ec2-52-207-15-147.compute-1.amazonaws.com:5432/d2vd1vbonk244q'),
-            'host' => env('DB_HOST', 'ec2-52-207-15-147.compute-1.amazonaws.com'),
+            'url' => env('postgres://ckhpazfdkfwste:532ab5daa7d6e402d0895400d1ae1ef026f3417dee31744e93509e3bee31a164@ec2-35-168-122-84.compute-1.amazonaws.com:5432/decl8jn0nrpkmh'),
+            'host' => env('DB_HOST', 'ec2-35-168-122-84.compute-1.amazonaws.com'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'd2vd1vbonk244q'),
-            'username' => env('DB_USERNAME', 'cnrmzsbsgjwbtv'),
-            'password' => env('DB_PASSWORD', 'aeadafde31a171beee08f266408e19a18c03f8f9ff7a1136aa04692792fbe471'),
+            'database' => env('DB_DATABASE', 'decl8jn0nrpkmh'),
+            'username' => env('DB_USERNAME', 'ckhpazfdkfwste'),
+            'password' => env('DB_PASSWORD', '532ab5daa7d6e402d0895400d1ae1ef026f3417dee31744e93509e3bee31a164'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,

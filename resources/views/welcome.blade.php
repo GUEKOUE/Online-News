@@ -63,7 +63,8 @@
                                         <small>read more...</small>
                                     </a></p>
                                 <div style="padding-top: 5px;font-size: 12px">
-                                    Author: {{$selectedNews['author'] ? : "Unknown" }}</div>
+                                    Author: {{$selectedNews['author'] ? : "Unknown" }}
+                                </div>
                                 @if($selectedNews['publishedAt'] !== null)
                                     <div style="padding-top: 5px;">Date
                                         Published: {{ Carbon\Carbon::parse($selectedNews['publishedAt'])->format('l jS \\of F Y ') }}</div>
@@ -110,8 +111,6 @@
                 </div>
             </section>
         </div>
-
-
         
     </body>
 
@@ -122,5 +121,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     
-    <script src="{{ asset('js/site.js') }}"></script>
+    <script src="{{ '/js/site.js' }}"></script>
 </html>

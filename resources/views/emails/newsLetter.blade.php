@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Laravel 8 Send Email Example</title>
+    <title>Inbox Email</title>
 </head>
 <body>
  

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\NewsletterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +23,9 @@ Route::get('/', function () {
 Route::get('/', [App\Http\Controllers\ApiController::class, 'displayNews'])->name('index');
 Route::post('/sourceId', [App\Http\Controllers\ApiController::class, 'displayNews'])->name('/sourceId');
 
-//Route::get('sendEmail', [SendEmailController::class, 'index']);
+Route::get('store-newsletter',[NewsletterController::class, 'index']);
+Route::post('store-newsletter',[NewsletterController::class, 'store'])->name('store-newsletter.store');
+
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');

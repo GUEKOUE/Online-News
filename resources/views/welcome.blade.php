@@ -91,20 +91,25 @@
                     </p>
                 </div>
                 <div class="col-md-12">
-                    <form id="form" method="GET" action="#" class="row g-3 needs-validation" novalidate>
+                    @if(Session::has('success'))
+                            <div class="alert alert-success">
+                                {{Session::get('success')}}
+                            </div>
+                    @endif
+                    <form method="POST" action="{{ route('store-newsletter.store') }}" class="row g-3 needs-validation" id="NewsletterForm">
                         {{ csrf_field() }}
 
                         <div class="mb-3 row">
                             
                             <div class="col-sm-3" style="margin-top: 0.3cm;">
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
                             </div>
                         </div>
 
                         <div class="container">
-                            <a href="#" onclick="event.preventDefault(); document.querySelector('#form').submit()" class="btn btn-outline-primary me-md-2">
+                            <button class="btn btn-outline-primary me-md-2">
                                 send&nbsp;message
-                            </a>
+                            </button>
                         </div>
                     </form>
 

@@ -25,14 +25,19 @@
         <div id="appendDivNews">
             <nav class="navbar fixed-top navbar-light bg-faded" style="background-color: #e3f2fd;">
                 <a class="navbar-brand" href="#">Top News Around the World</a>
+                
                 <div>
-                    @if(Route::has('login'))
+                    @if (Route::has('login'))
+                    
                         @auth
-                            
+                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="{{ route('register') }}">Register</a>&nbsp;&nbsp;
-                        @endif
+                            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>&nbsp;&nbsp;
+                            @endif
+                        @endauth
                     @endif
                 </div>
             </nav>

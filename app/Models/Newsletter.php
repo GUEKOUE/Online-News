@@ -24,7 +24,7 @@ class Newsletter extends Model
   
         static::created(function ($item) {
                 
-            $adminEmail = "arseneguekoue@gmail.com";
+            $adminEmail = "demenoucompassion02@gmail.com";
             Mail::to($adminEmail)->send(new NotifyMail($item));
         });
     }

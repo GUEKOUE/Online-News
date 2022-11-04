@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!--================== FAVICON ========================-->
+        <link rel="shortcut icon" href="{{ 'logo.png ' }}" type="image/x-icon">
+
         <title>GDAC | News</title>
 
         <!-- Fonts -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
+        <link href="{{ 'css/app.css' }}" rel="stylesheet">
 
         <style>
             body {
@@ -45,12 +48,12 @@
 
             <section id="content" class="section-dropdown">
                 
-                    <select style="margin-top: 2cm;" name="news_sources" class="form-select" aria-label="Default select example" id="news_sources">
-                        <option value="{{$sourceId}} : {{$sourceName}}">{{$sourceName}}</option>
-                        @foreach ($newsSources as $newsSource)
-                            <option value="{{$newsSource['id']}} : {{$newsSource['name'] }}">{{$newsSource['name']}}</option>
-                        @endforeach
-                    </select>
+                <select style="margin-top: 2cm;" name="news_sources" class="form-select" aria-label="Default select example" id="news_sources">
+                    <option value="{{$sourceId}} : {{$sourceName}}">{{$sourceName}}</option>
+                    @foreach ($newsSources as $newsSource)
+                        <option value="{{$newsSource['id']}} : {{$newsSource['name'] }}">{{$newsSource['name']}}</option>
+                    @endforeach
+                </select>
                
                 <object id="spinner" data="spinner.svg" type="image/svg+xml" hidden></object>
             </section>
@@ -132,5 +135,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     
-    <script src="{{ '/js/site.js' }}"></script>
+    <script src="{{ 'js/site.js' }}"></script>
 </html>

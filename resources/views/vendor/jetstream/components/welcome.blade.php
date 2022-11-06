@@ -1,90 +1,173 @@
-<div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-    <div>
-        <x-jet-application-logo class="block h-12 w-auto" />
-    </div>
-
-    <div class="mt-8 text-2xl">
-        Welcome to your Jetstream application!
-    </div>
-
-    <div class="mt-6 text-gray-500">
-        Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
-        to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe
-        you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel
-        ecosystem to be a breath of fresh air. We hope you love it.
-    </div>
-</div>
-
-<div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2">
-    <div class="p-6">
-        <div class="flex items-center">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laravel.com/docs">Documentation</a></div>
-        </div>
-
-        <div class="ml-12">
-            <div class="mt-2 text-sm text-gray-500">
-                Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.
-            </div>
-
-            <a href="https://laravel.com/docs">
-                <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
-                        <div>Explore the documentation</div>
-
-                        <div class="ml-1 text-indigo-500">
-                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+<div class="py-2">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <section class="text-gray-600 body-font">
+                <div class="container mx-auto flex flex-col px-5 py-24 justify-center  items-center">
+                    <div class="md:w-2/3 flex flex-col mb-16 text-center">
+                        {{-- <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800">
+                            GDAC News
+                        </h1> --}}
+                        <div class="px-auto h-full bg-gray-100 p-5 rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">
+                                Today's gossip is tomorrow's headline.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Walter_Winchell_1960.JPG" class="w-20 h-20 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Walter Winchell</span>
+                                    <span class="text-gray-500 text-sm">Journalist</span>
+                                </span>
+                            </a>
                         </div>
-                </div>
-            </a>
-        </div>
-    </div>
 
-    <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
-        <div class="flex items-center">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laracasts.com">Laracasts</a></div>
-        </div>
+                        <div class="relative mr-4">
+                            <div x-data="setup()">
+                                <ul class="flex justify-center items-center my-4">
+                                    <template x-for="(tab, index) in tabs" :key="index">
+                                        <li class="cursor-pointer py-3 px-4 text-gray-800 border-b" :class="activeTab===index ? 'text-indigo-500 border-indigo-500' : ''" @click="activeTab = index" x-text="tab"></li>
+                                    </template>
+                                </ul>
+                                <!-- 
+                                    Tabs
+                                 -->
+                                <div class="px-16 pb-16 pt-5 mx-auto">
 
-        <div class="ml-12">
-            <div class="mt-2 text-sm text-gray-500">
-                Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-            </div>
+                                    <div x-show="activeTab===0">
 
-            <a href="https://laracasts.com">
-                <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
-                        <div>Start watching Laracasts</div>
+                                        <!-- 
+                                        Search form
+                                     -->
+                                        <form action="{{ route('search') }}" method="get">
+                                            <div class="lg:flex gap-2">
+                                                <input placeholder="bitcoin price" type="text" id="new" name="new" class="lg:mb-0 w-full mb-2 bg-gray-300 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-300 text-base outline-none text-gray-700 py-2 leading-8 transition-colors duration-200 ease-in-out">
 
-                        <div class="ml-1 text-indigo-500">
-                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                                <button type="submit" class="w-full lg:w-1/4 flex justify-center inline-flex text-white bg-indigo-500 border-0 p-4 focus:outline-none hover:bg-indigo-600 rounded text-md">Search</button>
+                                            </div>
+
+                                            <div class="flex justify-center flex-wrap gap-1 mt-2 w-xl">
+                                                <!-- 
+                                                    Sort by
+                                             -->
+                                                <select class="w-full sm:w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-300 text-base outline-none text-gray-700 py-1 leading-8 transition-colors duration-200 ease-in-out" name="sort" id="sort">
+                                                    <option disabled="disabled" selected label="Sort by"></option>
+                                                    <option value="relevancy">
+                                                        Relevancy
+                                                    </option>
+                                                    <option value="popularity">
+                                                        Popular
+                                                    </option>
+                                                    <option value="publishedAt">
+                                                        News articles
+                                                    </option>
+                                                </select>
+                                                <!-- 
+                                                    Language
+                                                 -->
+                                                <select class="w-full sm:w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-300 text-base outline-none text-gray-700 py-1 leading-8 transition-colors duration-200 ease-in-out" name="language" id="language">
+                                                    <option disabled="disabled" selected label="Languages"></option>
+                                                    <option value="fr">French</option>
+                                                    <option value="en">English</option>
+                                                    <option value="es">Spanish</option>
+                                                    <option value="pt">Portuguese</option>
+                                                    <option value="ru">Russian</option>
+                                                    <option value="ar">Arabian</option>
+                                                </select>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                    <div x-show="activeTab===1">
+
+                                        <!-- 
+                                        Breaking News form
+                                     -->
+                                        <form action="{{ route('latest') }}" method="get">
+                                            <div class="lg:flex gap-2">
+                                                <button type="submit" class="w-full mb-5 h-12 px-5 text-white transition-colors duration-100 bg-red-500 rounded-lg focus:shadow-outline hover:bg-red-600 text-md">Search latest</button>
+                                            </div>
+
+                                            <div class="flex justify-center flex-wrap gap-1 mt-2 w-2xl">
+                                                <!-- 
+                                                    Countries
+                                                 -->
+                                                <select class="w-full lg:w-1/3 sm:w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-300 text-base outline-none text-gray-700 py-1 leading-8 transition-colors duration-200 ease-in-out" name="country" id="country">
+                                                    <option disabled="disabled" selected label="Country"></option>
+                                                    <option value="ar">Argentina </option>
+                                                    <option value="au">Australia</option>
+                                                    <option value="at">Austria</option>
+                                                    <option value="be">Belgium</option>
+                                                    <option value="br">Brazil</option>
+                                                    <option value="bg">Bulgaria</option>
+                                                    <option value="ca">Canada</option>
+                                                    <option value="cn">China</option>
+                                                    <option value="co">Colombia</option>
+                                                    <option value="cz">Czech Republic</option>
+                                                    <option value="eg">Egypt</option>
+                                                    <option value="fr">France</option>
+                                                    <option value="de">Germany</option>
+                                                    <option value="gr">Greece</option>
+                                                    <option value="hk">Hong Kong</option>
+                                                    <option value="hu">Hungary</option>
+                                                    <option value="in">India</option>
+                                                    <option value="id">Indonesia</option>
+                                                    <option value="ie">Ireland</option>
+                                                    <option value="il">Israel</option>
+                                                    <option value="it">Italy</option>
+                                                    <option value="lv">Latvia</option>
+                                                    <option value="lt">Lithuania</option>
+                                                    <option value="my">Malaysia</option>
+                                                    <option value="mx">Mexico</option>
+                                                    <option value="ma">Morocco</option>
+                                                    <option value="nl">Netherlands</option>
+                                                    <option value="nz">New Zealand</option>
+                                                    <option value="ng">Nigeria</option>
+                                                    <option value="no">Norway</option>
+                                                    <option value="ph">Philippines</option>
+                                                    <option value="pl">Poland</option>
+                                                    <option value="pt">Portugal</option>
+                                                    <option value="ro">Romania</option>
+                                                    <option value="ru">Russia</option>
+                                                    <option value="sa">Saudi Arabia</option>
+                                                    <option value="rs">Serbia</option>
+                                                    <option value="sg">Singapore</option>
+                                                    <option value="sk">Slovakia</option>
+                                                    <option value="si">Slovenia</option>
+                                                    <option value="za">South Africa</option>
+                                                    <option value="kr">South Korea</option>
+                                                    <option value="se">Sweden</option>
+                                                    <option value="ch">Switzerland</option>
+                                                    <option value="tw">Taiwan</option>
+                                                    <option value="th">Thailand</option>
+                                                    <option value="tr">Turkey</option>
+                                                    <option value="ua">Ukrain</option>
+                                                    <option value="uk">United Kingdom</option>
+                                                    <option value="us">United States</option>
+                                                    <option value="ve">Venezuela</option>
+                                                </select>
+
+                                                <!-- 
+                                                    Categories
+                                                 -->
+                                                <select class="w-full lg:w-1/2 sm:w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-300 text-base outline-none text-gray-700 py-1 leading-8 transition-colors duration-200 ease-in-out" name="categories" id="categories">
+                                                    <option disabled="disabled" selected label="Category"></option>
+                                                    <option value="business">Business</option>
+                                                    <option value="entertainment">Entertainment</option>
+                                                    <option value="general">General</option>
+                                                    <option value="health">Health</option>
+                                                    <option value="science">Science</option>
+                                                    <option value="sports">Sports</option>
+                                                    <option value="technology">Technology</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                 </div>
-            </a>
+            </section>
         </div>
     </div>
-
-    <div class="p-6 border-t border-gray-200">
-        <div class="flex items-center">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://tailwindcss.com/">Tailwind</a></div>
-        </div>
-
-        <div class="ml-12">
-            <div class="mt-2 text-sm text-gray-500">
-                Laravel Jetstream is built with Tailwind, an amazing utility first CSS framework that doesn't get in your way. You'll be amazed how easily you can build and maintain fresh, modern designs with this wonderful framework at your fingertips.
-            </div>
-        </div>
-    </div>
-
-    <div class="p-6 border-t border-gray-200 md:border-l">
-        <div class="flex items-center">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Authentication</div>
-        </div>
-
-        <div class="ml-12">
-            <div class="mt-2 text-sm text-gray-500">
-                Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.
-            </div>
-        </div>
-    </div>
-</div>

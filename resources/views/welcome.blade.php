@@ -35,10 +35,10 @@
                         @auth
                             <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="{{ route('login') }}" class="btn btn-outline-primary">Log in</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>&nbsp;&nbsp;
+                                <a href="{{ route('register') }}" class="btn btn-outline-primary">Register</a>&nbsp;&nbsp;
                             @endif
                         @endauth
                     @endif
@@ -105,11 +105,10 @@
                                 {{Session::get('success')}}
                             </div>
                     @endif
-                    <form method="POST" action="{{ route('store-newsletter.store') }}" class="row g-3 needs-validation" id="NewsletterForm">
+                    <form method="POST" action="{{ route('store-newsletter.store') }}"  id="NewsletterForm">
                         {{ csrf_field() }}
 
                         <div class="mb-3 row">
-                            
                             <div class="col-sm-3" style="margin-top: 0.3cm;">
                                 <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
                             </div>
@@ -131,7 +130,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" ></script>
+    <!-- Latest compiled JavaScript -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     

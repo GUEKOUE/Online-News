@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Contracts\NewsInterface;
-use App\Http\Requests;
+use Illuminate\Http\Request;
 use App\Http\Requests\LatestNewsAPIRequest;
 use App\Http\Requests\SearchNewsAPIRequest;
 use Illuminate\Contracts\View\View;
@@ -39,8 +38,6 @@ class NewsletterController extends Controller
         return redirect()->back()
                          ->with(['success' => 'Thank you for Subscribing. We will contact you shortly.']);   
     }
-
-    public function __construct(private NewsInterface $news){}
 
     public function latestNews(LatestNewsAPIRequest $request): View
     {
